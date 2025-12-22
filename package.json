@@ -1,0 +1,56 @@
+{
+  "name": "quick-launch-url",
+  "version": "0.0.0",
+  "description": "One-click launch URL generator for protocol-based apps.",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "dev": "cross-env NODE_ENV=development && turbo run dev --filter=./apps/playground...",
+    "build": "cross-env NODE_ENV=production && turbo run build --filter=./apps/core...",
+    "release": "rimraf build && pnpm -r --aggregate-output --filter=./apps/mcp release",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "changeset": "changeset",
+    "version": "changeset version"
+  },
+  "author": "zhensherlock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhensherlock/quick-launch-url/issues"
+  },
+  "homepage": "https://github.com/zhensherlock/quick-launch-url",
+  "keywords": [
+    "quick-launch",
+    "quick-launch-url",
+    "protocol-launcher",
+    "typescript"
+  ],
+  "packageManager": "pnpm@10.26.1",
+  "devDependencies": {
+    "@biomejs/biome": "2.3.10",
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/node": "22",
+    "@vitest/coverage-v8": "^4.0.16",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-vue": "^10.6.2",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "rimraf": "^6.1.2",
+    "rolldown": "1.0.0-beta.54",
+    "turbo": "^2.7.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.0",
+    "vitest": "^4.0.16",
+    "vue-eslint-parser": "^10.2.0"
+  }
+}

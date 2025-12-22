@@ -1,0 +1,39 @@
+{
+  "name": "@quick-launch-url/shared",
+  "version": "0.0.0",
+  "description": "One-click launch URL generator for protocol-based apps.",
+  "type": "module",
+  "author": "zhensherlock",
+  "homepage": "https://github.com/zhensherlock/quick-launch-url/tree/master/packages/shared#readme",
+  "keywords": [
+    "quick-launch",
+    "quick-launch-url",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhensherlock/quick-launch-url.git"
+  },
+  "scripts": {
+    "clean:dist": "rimraf dist",
+    "dev": "rolldown -c rolldown.config.ts --watch --no-clear-screen",
+    "build:types": "tsc",
+    "build": "npm run clean:dist && npm run build:types && rolldown -c rolldown.config.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/zhensherlock/quick-launch-url/issues"
+  },
+  "dependencies": {}
+}
