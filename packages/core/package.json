@@ -5,11 +5,7 @@
   "type": "module",
   "author": "zhensherlock",
   "homepage": "https://github.com/zhensherlock/quick-launch-url/tree/master/apps/core#readme",
-  "keywords": [
-    "quick-launch",
-    "quick-launch-url",
-    "typescript"
-  ],
+  "keywords": ["quick-launch", "quick-launch-url", "typescript"],
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "publishConfig": {
@@ -17,11 +13,7 @@
     "access": "public"
   },
   "license": "MIT",
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
+  "files": ["dist", "LICENSE", "README.md"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhensherlock/quick-launch-url.git"

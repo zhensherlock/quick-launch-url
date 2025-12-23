@@ -19,12 +19,7 @@
     "url": "https://github.com/zhensherlock/quick-launch-url/issues"
   },
   "homepage": "https://github.com/zhensherlock/quick-launch-url",
-  "keywords": [
-    "quick-launch",
-    "quick-launch-url",
-    "protocol-launcher",
-    "typescript"
-  ],
+  "keywords": ["quick-launch", "quick-launch-url", "protocol-launcher", "typescript"],
   "packageManager": "pnpm@10.26.1",
   "devDependencies": {
     "@biomejs/biome": "2.3.10",

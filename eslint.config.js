@@ -1,8 +1,8 @@
 import importPlugin from 'eslint-plugin-import'
 import prettierPlugin from 'eslint-plugin-prettier'
+import eslintPluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
-import eslintPluginVue from 'eslint-plugin-vue'
 import vueParser from 'vue-eslint-parser'
 
 export default [
@@ -66,16 +66,7 @@ export default [
     },
     rules: {
       'prettier/prettier': ['error', {}],
-      'vue/max-attributes-per-line': [
-        'error',
-        {
-          singleline: 1,
-          multiline: {
-            max: 1,
-            allowFirstLine: false,
-          },
-        },
-      ],
+      'vue/max-attributes-per-line': 'off',
       'vue/multi-word-component-names': 'off',
     },
   },
