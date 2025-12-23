@@ -210,14 +210,12 @@ export type MCPServerWithName = Omit<MCPServer, 'name'> & {
  * @example
  * installMCP([
  *   {
- *     id: 'everything',
  *     name: 'server-everything',
  *     type: 'stdio',
  *     command: 'npx',
  *     args: ['-y', '@modelcontextprotocol/server-everything'],
  *   },
  *   {
- *     id: 'qcc-company-basic-stream',
  *     name: '企查查企业信息 MCP',
  *     description: '企业信息 MCP 提供全面的企业画像分析与企业信息洞察服务，助您快速验证企业真实性、评估其稳定性和发展轨迹，为您的商业行动提供坚实的数据支撑。',
  *     type: 'streamableHttp',
@@ -232,7 +230,6 @@ export type MCPServerWithName = Omit<MCPServer, 'name'> & {
  *     timeout: 30,
  *   },
  *   {
- *     id: 'qcc-company-basic-sse',
  *     name: '企查查企业信息 MCP',
  *     description: '企业信息 MCP 提供全面的企业画像分析与企业信息洞察服务，助您快速验证企业真实性、评估其稳定性和发展轨迹，为您的商业行动提供坚实的数据支撑。',
  *     type: 'sse',

@@ -14,7 +14,6 @@ const urls = [
           providerUrl: 'https://modelcontextprotocol.io/',
         },
         'qcc-company-basic-stream': {
-          id: 'qcc-company-basic-stream',
           name: '企查查企业信息 MCP',
           description:
             '企业信息 MCP 提供全面的企业画像分析与企业信息洞察服务，助您快速验证企业  真实性、评估其稳定性和发展轨迹，为您的商业行动提供坚实的数据支撑。',
@@ -31,7 +30,6 @@ const urls = [
           timeout: 30,
         },
         'qcc-company-risk-sse': {
-          id: 'qcc-company-risk-sse',
           name: '企查查风险信息 MCP',
           description:
             '风险信息 MCP 提供全面的企业风险透视扫描能力，可识别企业在司法、行政、经营等方面的信用与合规隐患，助您精准评估合作对象的可靠性，有效规避商业陷阱与连带风险。',
@@ -65,7 +63,6 @@ const urls = [
   {
     label: 'Install Streamable HTTP MCP Server',
     value: cherryStudio.installMCP({
-      id: 'qcc-company-basic-stream',
       name: '企查查企业信息 MCP',
       description:
         '企业信息 MCP 提供全面的企业画像分析与企业信息洞察服务，助您快速验证企业真实性、评估其稳定性和发展轨迹，为您的商业行动提供坚实的数据支撑。',
@@ -85,7 +82,6 @@ const urls = [
   {
     label: 'Install SSE MCP Server',
     value: cherryStudio.installMCP({
-      id: 'qcc-company-risk-sse',
       name: '企查查风险信息 MCP',
       description:
         '风险信息 MCP 提供全面的企业风险透视扫描能力，可识别企业在司法、行政、经营等方面的信用与合规隐患，助您精准评估合作对象的可靠性，有效规避商业陷阱与连带风险。',
