@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "prepare": "husky",
-    "dev": "cross-env NODE_ENV=development && turbo run dev --filter=./apps/playground...",
-    "build": "cross-env NODE_ENV=production && turbo run build --filter=./apps/core...",
-    "release": "rimraf build && pnpm -r --aggregate-output --filter=./apps/mcp release",
+    "dev": "cross-env NODE_ENV=development turbo run dev --filter=./apps/playground...",
+    "build": "cross-env NODE_ENV=production turbo run build --filter=./packages/core...",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "changeset": "changeset",
