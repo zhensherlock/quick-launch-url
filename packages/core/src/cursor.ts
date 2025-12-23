@@ -1,5 +1,11 @@
 import { type EncodeOptions, encodeUrlPayload } from '@quick-launch-url/shared'
 
+/**
+ * MCP Server definition.
+ *
+ * Represents a resolved MCP server configuration used by the client
+ * for discovery, display, and runtime communication.
+ */
 export type MCPServer = {
   /**
    * Server name.
@@ -56,6 +62,19 @@ export type MCPServer = {
   headers?: Record<string, string>
 }
 
+/**
+ * Install MCP Server
+ * @param payload MCP Server
+ * @param options Encode Options
+ * @returns Install MCP Server URL
+ * @example
+ * installMCP({
+ *   name: 'server-everything',
+ *   type: 'stdio',
+ *   command: 'npx',
+ *   args: ['-y', '@modelcontextprotocol/server-everything'],
+ * })
+ */
 export function installMCP(payload: MCPServer, options?: EncodeOptions) {
   const { name, ...config } = payload
   const encodedPayload = encodeUrlPayload(config, options)
