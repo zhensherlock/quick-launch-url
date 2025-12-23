@@ -7,6 +7,7 @@ import { type EncodeOptions, encodeUrlPayload } from '@quick-launch-url/shared'
  * for discovery, display, and runtime communication.
  *
  * @link https://github.com/CherryHQ/cherry-studio/blob/main/src/renderer/src/types/mcp.ts
+ * @link https://github.com/CherryHQ/cherry-studio/blob/main/src/renderer/src/types/index.ts#L693
  */
 export type MCPServer = {
   /**
@@ -246,8 +247,7 @@ export type MCPServerWithName = Omit<MCPServer, 'name'> & {
  *     timeout: 30,
  *   },
  * })
- * @link
- * https://github.com/CherryHQ/cherry-studio/blob/main/src/main/services/urlschema/mcp-install.ts#L39
+ * @link https://github.com/CherryHQ/cherry-studio/blob/main/src/main/services/urlschema/mcp-install.ts#L39
  */
 export function installMCP(
   payload: MCPServerWithName | MCPServerWithName[] | { mcpServers: Record<string, MCPServer> },
