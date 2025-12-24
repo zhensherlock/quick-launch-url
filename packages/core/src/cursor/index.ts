@@ -1,0 +1,1 @@
+export { installMCP } from './mcp'
