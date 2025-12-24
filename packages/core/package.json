@@ -6,7 +6,7 @@
   "author": "zhensherlock",
   "homepage": "https://github.com/zhensherlock/quick-launch-url/tree/master/apps/core#readme",
   "keywords": ["quick-launch", "quick-launch-url", "typescript"],
-  "main": "dist/index.js",
+  "main": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -29,5 +29,19 @@
   },
   "dependencies": {
     "@quick-launch-url/shared": "workspace:*"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.esm.js"
+    },
+    "./cherry-studio": {
+      "types": "./dist/types/cherry-studio/index.d.ts",
+      "import": "./dist/cherry-studio/index.js"
+    },
+    "./cursor": {
+      "types": "./dist/types/cursor/index.d.ts",
+      "import": "./dist/cursor/index.js"
+    }
   }
 }
