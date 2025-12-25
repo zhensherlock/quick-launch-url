@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { cursor } from '@quick-launch-url/core'
+import { installMCP } from '@quick-launch-url/core/cursor'
 
 const urls = [
   {
     label: 'Install STDIO MCP Server',
-    value: cursor.installMCP({
+    value: installMCP({
       name: 'server-everything',
       type: 'stdio',
       command: 'npx',
@@ -13,7 +13,7 @@ const urls = [
   },
   {
     label: 'Install Streamable HTTP MCP Server',
-    value: cursor.installMCP({
+    value: installMCP({
       name: '企查查企业信息 MCP',
       type: 'streamable_http',
       url: 'https://mcp.qcc.com/basic/stream',
@@ -24,7 +24,7 @@ const urls = [
   },
   {
     label: 'Install SSE MCP Server',
-    value: cursor.installMCP({
+    value: installMCP({
       name: '企查查风险信息 MCP',
       type: 'sse',
       url: 'https://mcp.qcc.com/basic/sse',
