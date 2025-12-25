@@ -101,11 +101,9 @@ const urls = [
   {
     label: 'Install Provider',
     value: installProvider({
-      id: '302ai',
-      baseUrl: 'https://open.cherryin.net',
-      apiKey: 'sk1-xxxx',
-      name: 'MyProvider',
-      type: 'ollama',
+      id: 'new-api',
+      baseUrl: 'https://open.cherryin.ai',
+      apiKey: 'sk-xxxx',
     }),
   },
 ]
