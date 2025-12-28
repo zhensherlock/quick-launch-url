@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "prepare": "husky",
-    "dev": "cross-env NODE_ENV=development turbo run dev --filter=./apps/playground...",
-    "build": "cross-env NODE_ENV=production turbo run build --filter=./packages/core...",
+    "dev": "cross-env NODE_ENV=development turbo run dev --filter=./apps/playground... --filter=./apps/docs...",
+    "build": "cross-env NODE_ENV=production turbo run build --filter=./apps/playground...",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "changeset": "changeset",
@@ -18,8 +18,13 @@
     "url": "https://github.com/zhensherlock/quick-launch-url/issues"
   },
   "homepage": "https://github.com/zhensherlock/quick-launch-url",
-  "keywords": ["quick-launch", "quick-launch-url", "protocol-launcher", "typescript"],
-  "packageManager": "pnpm@10.26.1",
+  "keywords": [
+    "quick-launch",
+    "quick-launch-url",
+    "protocol-launcher",
+    "typescript"
+  ],
+  "packageManager": "pnpm@10.26.2",
   "devDependencies": {
     "@biomejs/biome": "2.3.10",
     "@changesets/changelog-github": "^0.5.2",
@@ -41,9 +46,9 @@
     "prettier": "^3.7.4",
     "rimraf": "^6.1.2",
     "rolldown": "1.0.0-beta.54",
-    "turbo": "^2.7.1",
+    "turbo": "^2.7.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.50.0",
+    "typescript-eslint": "^8.50.1",
     "vitest": "^4.0.16",
     "vue-eslint-parser": "^10.2.0"
   }
