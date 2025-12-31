@@ -7,11 +7,16 @@ const urls = [
     value: installMCP({
       mcpServers: {
         'server-everything': {
+          name: 'server-everything',
+          description:
+            'This MCP server attempts to exercise all the features of the MCP protocol. It is not intended to be a useful server, but rather a test server for builders of MCP clients. It implements prompts, tools, resources, sampling, and more to showcase MCP capabilities.',
           type: 'stdio',
           command: 'npx',
           args: ['-y', '@modelcontextprotocol/server-everything'],
-          provider: 'Claude',
+          registryUrl: 'https://registry.npmmirror.com',
+          provider: 'Anthropic',
           providerUrl: 'https://modelcontextprotocol.io/',
+          logoUrl: 'https://avatars.githubusercontent.com/u/182288589?s=200&v=4',
         },
         'qcc-company-basic-stream': {
           name: '企查查企业信息 MCP',
@@ -23,8 +28,7 @@ const urls = [
             Authorization: 'M0jtlHI3ASqdMXkC3pBcibrFwmVxsD1QMreZxcSM1LbDNGPE',
           },
           provider: 'QCC',
-          providerUrl: 'https://openapi.qcc.com/',
-          reference: 'https://openapi.qcc.com/mcpTools?service=basic',
+          providerUrl: 'https://openapi.qcc.com/mcpTools?service=basic',
           logoUrl: 'https://openapi.qcc.com/favicon.ico',
           tags: ['company-basic', '企业信息'],
           timeout: 30,
@@ -39,8 +43,7 @@ const urls = [
             Authorization: 'M0jtlHI3ASqdMXkC3pBcibrFwmVxsD1QMreZxcSM1LbDNGPE',
           },
           provider: 'QCC',
-          providerUrl: 'https://openapi.qcc.com/',
-          reference: 'https://openapi.qcc.com/mcpTools?service=risk',
+          providerUrl: 'https://openapi.qcc.com/mcpTools?service=risk',
           logoUrl: 'https://openapi.qcc.com/favicon.ico',
           tags: ['company-risk', '风险信息'],
           timeout: 30,
@@ -52,12 +55,15 @@ const urls = [
     label: 'Install STDIO MCP Server',
     value: installMCP({
       name: 'server-everything',
+      description:
+        'This MCP server attempts to exercise all the features of the MCP protocol. It is not intended to be a useful server, but rather a test server for builders of MCP clients. It implements prompts, tools, resources, sampling, and more to showcase MCP capabilities.',
       type: 'stdio',
       command: 'npx',
       args: ['-y', '@modelcontextprotocol/server-everything'],
       registryUrl: 'https://registry.npmmirror.com',
-      provider: 'Claude',
+      provider: 'Anthropic',
       providerUrl: 'https://modelcontextprotocol.io/',
+      logoUrl: 'https://avatars.githubusercontent.com/u/182288589?s=200&v=4',
     }),
   },
   {
