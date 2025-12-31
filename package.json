@@ -45,7 +45,7 @@
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4",
     "rimraf": "^6.1.2",
-    "rolldown": "1.0.0-beta.54",
+    "rolldown": "1.0.0-beta.58",
     "turbo": "^2.7.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.50.1",
