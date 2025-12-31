@@ -1,0 +1,18 @@
+{
+  "name": "@quick-launch-url/docs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "One-click launch URL generator for protocol-based apps.",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.15",
+    "vitepress-plugin-group-icons": "^1.6.5",
+    "vitepress-plugin-llms": "^1.10.0"
+  }
+}
