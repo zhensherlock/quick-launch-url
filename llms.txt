@@ -1,0 +1,33 @@
+# Quick Launch URL
+
+> TypeScript library for generating Quick Launch (deep link) URLs to trigger app actions with one click, e.g., installing plugins, configuring servers, or setting API keys.
+
+- 🛡️ Type-Safe
+- 🧩 Multi-App Ready
+- 🔬 On-Demand / Tree-shakable
+- 🔐 Secure Encoding (safe configs, Unicode)
+- ⚙️ Zero Runtime Dependencies
+- 📦 ESM First
+- 🚀 One-click deep links to trigger app actions
+
+
+## Table of Contents
+
+
+
+### 简介
+
+- [什么是 Quick Launch URL？](/quick-launch-url/zh/guide/what-is-it.md)
+- [入门指南](/quick-launch-url/zh/guide/getting-started.md)
+
+### 应用程序
+
+- [Cherry Studio](/quick-launch-url/zh/apps/cherry-studio.md)
+- [Cursor](/quick-launch-url/zh/apps/cursor.md)
+
+### Other
+
+- [Cherry Studio](/quick-launch-url/appscherry-studio.md)
+- [Cursor](/quick-launch-url/appscursor.md)
+- [Getting Started](/quick-launch-url/guidegetting-started.md)
+- [What is Quick Launch URL?](/quick-launch-url/guidewhat-is-it.md)
