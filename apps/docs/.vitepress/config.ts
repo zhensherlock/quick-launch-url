@@ -7,7 +7,7 @@ import pkg from '../../../packages/core/package.json' with { type: 'json' }
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Quick Launch URL',
-  description: 'One-click Launch URL Generator for Cherry Studio and Cursor',
+  description: 'One-click launch URL generator for protocol-based apps.',
   rewrites: {
     'en/:rest*': ':rest*',
     'en/index.md': 'index.md',
@@ -32,7 +32,7 @@ export default defineConfig({
         items: [
           {
             text: 'Changelog',
-            link: 'https://github.com/zhensherlock/quick-launch-url/blob/main/packages/core/CHANGELOG.md',
+            link: 'https://github.com/zhensherlock/quick-launch-url/releases',
           },
         ],
       },
@@ -81,22 +81,22 @@ export default defineConfig({
       tailwindcss(),
       llmstxt({
         ignoreFiles: ['en/index.md', 'zh/index.md'],
-        description: 'One-click Launch URL Generator for Cherry Studio and Cursor',
+        description: 'TypeScript library for generating Quick Launch (deep link) URLs to trigger app actions with one click, e.g., installing plugins, configuring servers, or setting API keys.',
         sidebar: [
           {
             text: 'Introduction',
             base: '',
             items: [
-              { text: 'What is Quick Launch URL?', link: '/en/guide/what-is-it' },
-              { text: 'Getting Started', link: '/en/guide/getting-started' },
+              { text: 'What is Quick Launch URL?', link: '/guide/what-is-it' },
+              { text: 'Getting Started', link: '/guide/getting-started' },
             ],
           },
           {
             text: 'Applications',
             base: '',
             items: [
-              { text: 'Cherry Studio', link: '/en/apps/cherry-studio' },
-              { text: 'Cursor', link: '/en/apps/cursor' },
+              { text: 'Cherry Studio', link: '/apps/cherry-studio' },
+              { text: 'Cursor', link: '/apps/cursor' },
             ],
           },
           {
@@ -117,11 +117,13 @@ export default defineConfig({
           },
         ],
         details: `\
-- 🚀 One-click Launch
-- 🍒 Cherry Studio Support
-- 🖱️ Cursor Support
-- 🛡️ Type Safe
-- 🌍 Universal Compatible
+- 🛡️ Type-Safe
+- 🧩 Multi-App Ready
+- 🔬 On-Demand / Tree-shakable
+- 🔐 Secure Encoding (safe configs, Unicode)
+- ⚙️ Zero Runtime Dependencies
+- 📦 ESM First
+- 🚀 One-click deep links to trigger app actions
 `,
       }),
       groupIconVitePlugin({
