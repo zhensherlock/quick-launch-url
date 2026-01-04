@@ -54,7 +54,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
+          publish_dir: apps/docs/.vitepress/dist
 
       - name: Get the content of algolia.json as config
         id: algolia_config

@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky",
     "dev": "cross-env NODE_ENV=development turbo run dev --filter=./apps/playground... --filter=./apps/docs...",
-    "build": "cross-env NODE_ENV=production turbo run build --filter=./apps/playground...",
+    "build": "cross-env NODE_ENV=production turbo run build --filter=./apps/playground... --filter=./apps/docs...",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "changeset": "changeset",
