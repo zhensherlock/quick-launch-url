@@ -1,3 +1,4 @@
+import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 import llmstxt from 'vitepress-plugin-llms'
@@ -37,6 +38,10 @@ export default defineConfig({
       },
     ],
 
+    outline: {
+      level: [2, 3],
+    },
+
     sidebar: [
       {
         text: 'Introduction',
@@ -73,6 +78,7 @@ export default defineConfig({
       open: true,
     },
     plugins: [
+      tailwindcss(),
       llmstxt({
         ignoreFiles: ['en/index.md', 'zh/index.md'],
         description: 'One-click Launch URL Generator for Cherry Studio and Cursor',
@@ -120,9 +126,9 @@ export default defineConfig({
       }),
       groupIconVitePlugin({
         customIcon: {
-          'cursor': localIconLoader(import.meta.url, '../assets/cursor.svg'),
+          cursor: localIconLoader(import.meta.url, '../assets/cursor.svg'),
           'cherry studio': localIconLoader(import.meta.url, '../assets/cherry-studio.svg'),
-        }
+        },
       }),
     ],
   },
