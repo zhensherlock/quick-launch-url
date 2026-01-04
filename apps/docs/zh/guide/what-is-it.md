@@ -21,7 +21,7 @@ layout: doc
 
 目前，我们支持以下应用程序：
 
-- [Cherry Studio](./cherry-studio)
-- [Cursor](./cursor)
+- [Cherry Studio](../apps/cherry-studio.md)
+- [Cursor](../apps/cursor.md)
 
 未来将添加更多应用程序。

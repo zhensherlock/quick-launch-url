@@ -21,7 +21,7 @@ These URLs allow users to trigger specific actions in applications with a single
 
 Currently, we support the following applications:
 
-- [Cherry Studio](./cherry-studio)
-- [Cursor](./cursor)
+- [Cherry Studio](../apps/cherry-studio.md)
+- [Cursor](../apps/cursor.md)
 
 More applications will be added in the future.
