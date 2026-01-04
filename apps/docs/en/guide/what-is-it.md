@@ -13,7 +13,7 @@ These URLs allow users to trigger specific actions in applications with a single
 - **Type-Safe**: Strict TypeScript types validate payloads and prevent malformed links.
 - **Multi-App Ready**: Extensible design to support many apps via URL schemes.
 - **On-Demand / Tree-shakable**: Import only what you need; small bundle footprint.
-- **Secure Encoding**: Encodes configs safely to avoid injection and broken URLs.
+- **Secure Encoding**: Encodes configs safely to avoid injection. Supports Unicode characters including Chinese.
 - **Zero Runtime Dependencies**: Lightweight library with no external runtime dependencies.
 - **ESM First**: Modern ES Modules, works in Node and bundlers.
 

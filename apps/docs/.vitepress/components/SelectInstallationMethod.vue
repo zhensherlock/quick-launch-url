@@ -1,6 +1,8 @@
 <template>
   <div class="p-5 my-6 rounded-xl border border-(--vp-c-divider) bg-(--vp-c-bg-soft)">
-    <h3 class="text-base! font-bold! text-(--vp-c-text-1)! mb-3! mt-0!">Select Installation Method</h3>
+    <h3 class="text-base! font-bold! text-(--vp-c-text-1)! mb-3! mt-0!">
+      {{ i18nContent[language].title }}
+    </h3>
     <div class="flex flex-col sm:flex-row gap-3">
       <div
         class="flex-1 relative flex items-center gap-3 p-3 rounded-lg border-2 cursor-pointer transition-all duration-200"
@@ -14,8 +16,8 @@
           <div v-if="currentMethod === 'On-Demand'" class="w-2.5 h-2.5 rounded-full bg-(--vp-c-brand)"></div>
         </div>
         <div>
-          <div class="font-bold text-sm" :class="currentMethod === 'On-Demand' ? 'text-(--vp-c-brand)' : 'text-(--vp-c-text-1)'">On-Demand</div>
-          <div class="text-xs text-(--vp-c-text-2)">Recommended. Optimized for production.</div>
+          <div class="font-bold text-sm" :class="currentMethod === 'On-Demand' ? 'text-(--vp-c-brand)' : 'text-(--vp-c-text-1)'">{{ i18nContent[language].onDemand }}</div>
+          <div class="text-xs text-(--vp-c-text-2)">{{ i18nContent[language].onDemandDesc }}</div>
         </div>
       </div>
       <div
@@ -30,8 +32,8 @@
           <div v-if="currentMethod === 'Full Import'" class="w-2.5 h-2.5 rounded-full bg-(--vp-c-brand)"></div>
         </div>
         <div>
-          <div class="font-bold text-sm" :class="currentMethod === 'Full Import' ? 'text-(--vp-c-brand)' : 'text-(--vp-c-text-1)'">Full Import</div>
-          <div class="text-xs text-(--vp-c-text-2)">Convenient. Good for quick scripts.</div>
+          <div class="font-bold text-sm" :class="currentMethod === 'Full Import' ? 'text-(--vp-c-brand)' : 'text-(--vp-c-text-1)'">{{ i18nContent[language].fullImport }}</div>
+          <div class="text-xs text-(--vp-c-text-2)">{{ i18nContent[language].fullImportDesc }}</div>
         </div>
       </div>
     </div>
@@ -39,7 +41,11 @@
 </template>
 
 <script lang="ts" setup>
+import { useData } from 'vitepress'
 import { computed } from 'vue'
+
+const { lang } = useData()
+const language = lang as unknown as 'en-US' | 'zh-Hans'
 
 const props = defineProps<{
   modelValue?: string
@@ -57,6 +63,23 @@ const currentMethod = computed<string>({
     emit('update:modelValue', val)
   },
 })
+
+const i18nContent = {
+  'en-US': {
+    title: 'Select Installation Method',
+    onDemand: 'On-Demand',
+    onDemandDesc: 'Recommended. Optimized for production.',
+    fullImport: 'Full Import',
+    fullImportDesc: 'Convenient. Good for quick scripts.',
+  },
+  'zh-Hans': {
+    title: '选择安装方式',
+    onDemand: '按需加载',
+    onDemandDesc: '推荐使用。生产环境优化。',
+    fullImport: '全量导入',
+    fullImportDesc: '使用便捷。适合快速脚本。',
+  }
+}
 </script>
 
 <style scoped>

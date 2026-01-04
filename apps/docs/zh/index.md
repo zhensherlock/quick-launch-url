@@ -28,7 +28,7 @@ features:
     details: 仅按需导入所需功能，减小打包体积。
   - title: 安全编码
     icon: 🔐
-    details: 对配置进行安全编码，避免注入与 URL 破坏。
+    details: 对配置进行安全编码，避免注入。完美支持中文等 Unicode 字符。
   - title: 零依赖
     icon: ⚙️
     details: 轻量、无外部运行时依赖。

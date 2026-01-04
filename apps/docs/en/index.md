@@ -28,7 +28,7 @@ features:
     details: Import only what you need; small bundle footprint.
   - title: Secure Encoding
     icon: 🔐
-    details: Encodes configs safely to avoid injection and broken URLs.
+    details: Encodes configs safely to avoid injection. Supports Unicode characters including Chinese.
   - title: Zero Runtime Dependencies
     icon: ⚙️
     details: Lightweight library with no external runtime dependencies.
