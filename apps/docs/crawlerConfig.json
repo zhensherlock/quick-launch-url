@@ -14,7 +14,6 @@
       "lvl3": ".content h3",
       "lvl4": ".content h4",
       "lvl5": ".content h5",
-      "lvl6": ".content h6",
       "text": ".content p, .content li",
       "lang": {
         "selector": "/html/@lang",
