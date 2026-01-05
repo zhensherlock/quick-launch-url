@@ -1,7 +1,7 @@
 {
   "name": "@quick-launch-url/playground",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "One-click launch URL generator for protocol-based apps.",
   "type": "module",
   "author": "zhensherlock",
