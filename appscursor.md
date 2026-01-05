@@ -57,3 +57,16 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
   },
 })
 ```
+
+### Open File
+
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openFile' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
+  path: '/etc/hosts',
+  line: 1,
+  column: 2,
+  openInNewWindow: true,
+})
+```
