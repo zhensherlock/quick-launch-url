@@ -13,4 +13,14 @@ describe('cursor.ts', () => {
       'cursor://anysphere.cursor-deeplink/mcp/install?name=server-everything&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBtb2RlbGNvbnRleHRwcm90b2NvbC9zZXJ2ZXItZXZlcnl0aGluZyJdfQ%3D%3D',
     )
   })
+
+  test('openFile should return a URL with path, line, column, and openInNewWindow', async () => {
+    const url = cursor.openFile({
+      path: '/etc/hosts',
+      line: 1,
+      column: 2,
+      openInNewWindow: true,
+    })
+    expect(url).toBe('cursor://file/etc/hosts:1:2?windowId=_blank')
+  })
 })
