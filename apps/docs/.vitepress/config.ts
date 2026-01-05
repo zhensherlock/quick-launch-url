@@ -32,7 +32,7 @@ export default defineConfig({
         items: [
           {
             text: 'Changelog',
-            link: 'https://github.com/zhensherlock/quick-launch-url/releases',
+            link: 'https://github.com/zhensherlock/quick-launch-url/blob/main/packages/core/CHANGELOG.md',
           },
         ],
       },
