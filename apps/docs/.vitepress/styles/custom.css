@@ -23,3 +23,7 @@
   filter: drop-shadow(-2px 4px 6px #0003);
   padding: 18px;
 }
+
+.DocSearch-Button {
+  background-color: var(--docsearch-searchbox-background);
+}
