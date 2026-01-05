@@ -1,5 +1,5 @@
 {
-  "index_name": "create-mcp-kit",
+  "index_name": "quick-launch-url",
   "start_urls": ["https://zhensherlock.github.io/quick-launch-url/"],
   "rateLimit": 8,
   "maxDepth": 10,
