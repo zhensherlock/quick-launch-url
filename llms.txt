@@ -27,6 +27,7 @@
 
 ### Other
 
+- [@quick-launch-url/docs](/quick-launch-url/CHANGELOG.md)
 - [Cherry Studio](/quick-launch-url/appscherry-studio.md)
 - [Cursor](/quick-launch-url/appscursor.md)
 - [Getting Started](/quick-launch-url/guidegetting-started.md)
