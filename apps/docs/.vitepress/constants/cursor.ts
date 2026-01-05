@@ -22,3 +22,10 @@ export const installSSEMCPServerParams = {
     Authorization: 'MjMmbGnP0gwLcbYe7MCr4FCuIA9dHQ9277zoO409EGZOdL3K',
   },
 }
+
+export const openFileParams = {
+  path: '/etc/hosts',
+  line: 1,
+  column: 2,
+  openInNewWindow: true,
+}

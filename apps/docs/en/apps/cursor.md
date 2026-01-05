@@ -5,12 +5,13 @@ layout: doc
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue';
-import { installMCP } from '@quick-launch-url/core/cursor';
+import { installMCP, openFile } from '@quick-launch-url/core/cursor';
 import { SelectInstallationMethod } from '../../.vitepress/components';
 import {
   installSTDIOMCPServerParams,
   installStreamableHTTPMCPServerParams,
   installSSEMCPServerParams,
+  openFileParams,
 } from '../../.vitepress/constants/cursor';
 
 const currentMethod = ref('On-Demand');
@@ -83,6 +84,23 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
 ```
 <div class="flex justify-center">
   <VPLink :href="installMCP(installSSEMCPServerParams)" target="_self">
+    Add to Cursor
+  </VPLink>
+</div>
+
+### Open File
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openFile' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
+  path: '/etc/hosts',
+  line: 1,
+  column: 2,
+  openInNewWindow: true,
+})
+```
+<div class="flex justify-center">
+  <VPLink :href="openFile(openFileParams)" target="_self">
     Add to Cursor
   </VPLink>
 </div>
