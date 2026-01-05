@@ -2,6 +2,10 @@ export interface EncodeOptions {
   useSafeEncoding?: boolean
 }
 
+export function isUndefined(value: unknown): value is undefined {
+  return value === undefined
+}
+
 function safeBase64Encode(str: string): string {
   return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, h) => String.fromCharCode(parseInt(h, 16))))
 }
