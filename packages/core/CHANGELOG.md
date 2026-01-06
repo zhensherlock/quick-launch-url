@@ -1,5 +1,22 @@
 # @quick-launch-url/core
 
+## 0.0.2
+
+### Patch Changes
+
+- [`08b76cf`](https://github.com/zhensherlock/quick-launch-url/commit/08b76cf31a053521407a70ecc13e3f8ffdf70690) Thanks [@zhensherlock](https://github.com/zhensherlock)! - test(cherry-studio): add test for installProvider URL generation
+
+- [`07d39c1`](https://github.com/zhensherlock/quick-launch-url/commit/07d39c17329c9c1466d27190c8abbb728f7673f7) Thanks [@zhensherlock](https://github.com/zhensherlock)! - test(cursor): add test for openFile with path, line and column
+
+- [`912cc63`](https://github.com/zhensherlock/quick-launch-url/commit/912cc6318f9376f19c64bd7dbed9d84f353d2a70) Thanks [@zhensherlock](https://github.com/zhensherlock)! - feat(cursor): add openFolder functionality for folder navigation
+
+- [`01b1d7a`](https://github.com/zhensherlock/quick-launch-url/commit/01b1d7a543606466d8ee8d126f19ddcd6f2903b2) Thanks [@zhensherlock](https://github.com/zhensherlock)! - feat(cursor): add openFile function to handle file paths
+
+- [`27f8f54`](https://github.com/zhensherlock/quick-launch-url/commit/27f8f54c092384e626ec9720998ba7a5330bd550) Thanks [@zhensherlock](https://github.com/zhensherlock)! - docs: update homepage URLs to point to GitHub Pages
+
+- Updated dependencies [[`741878a`](https://github.com/zhensherlock/quick-launch-url/commit/741878a30a9710d552abcc67718fb2ccff03c5d4), [`9bb5325`](https://github.com/zhensherlock/quick-launch-url/commit/9bb532539b88ab97b1903e56641a16024f773c2a), [`fa94400`](https://github.com/zhensherlock/quick-launch-url/commit/fa94400819532760e8bda399cab04d6bfb605e3b)]:
+  - @quick-launch-url/shared@0.0.2
+
 ## 0.0.1
 
 ### Patch Changes

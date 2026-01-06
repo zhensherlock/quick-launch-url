@@ -1,5 +1,12 @@
 # @quick-launch-url/playground
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`08b76cf`](https://github.com/zhensherlock/quick-launch-url/commit/08b76cf31a053521407a70ecc13e3f8ffdf70690), [`07d39c1`](https://github.com/zhensherlock/quick-launch-url/commit/07d39c17329c9c1466d27190c8abbb728f7673f7), [`912cc63`](https://github.com/zhensherlock/quick-launch-url/commit/912cc6318f9376f19c64bd7dbed9d84f353d2a70), [`01b1d7a`](https://github.com/zhensherlock/quick-launch-url/commit/01b1d7a543606466d8ee8d126f19ddcd6f2903b2), [`27f8f54`](https://github.com/zhensherlock/quick-launch-url/commit/27f8f54c092384e626ec9720998ba7a5330bd550)]:
+  - @quick-launch-url/core@0.0.2
+
 ## 0.0.1
 
 ### Patch Changes
