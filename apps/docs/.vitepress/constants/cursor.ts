@@ -34,7 +34,7 @@ export const openFileParams = (isWindows: boolean) => {
 
 export const openFolderParams = (isWindows: boolean) => {
   return {
-    path: isWindows ? 'C:\\Windows' : '/System',
+    path: isWindows ? 'C:\\Windows\\System32\\drivers\\etc' : '/etc',
     openInNewWindow: true,
   }
 }

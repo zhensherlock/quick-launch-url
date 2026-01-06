@@ -114,7 +114,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
 import { {{ currentMethod === 'On-Demand' ? 'openFolder' : 'cursor' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
-  path: '{{ appStore.isWindows ? 'C:\Windows' : '/System' }}',
+  path: '{{ appStore.isWindows ? 'C:\Windows\System32\drivers\etc' : '/etc' }}',
   openInNewWindow: true,
 })
 ```
