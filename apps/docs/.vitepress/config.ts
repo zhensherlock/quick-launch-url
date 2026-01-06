@@ -12,7 +12,7 @@ export default defineConfig({
     'en/:rest*': ':rest*',
     'en/index.md': 'index.md',
   },
-  base: '/quick-launch-url/',
+  base: process.env.VERCEL ? '/' : '/quick-launch-url/',
   head: [
     ['link', { rel: 'shortcut icon', href: '/quick-launch-url/logo.svg' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/quick-launch-url/logo.svg' }],
