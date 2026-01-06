@@ -1,5 +1,15 @@
 # @quick-launch-url/shared
 
+## 0.0.2
+
+### Patch Changes
+
+- [`741878a`](https://github.com/zhensherlock/quick-launch-url/commit/741878a30a9710d552abcc67718fb2ccff03c5d4) Thanks [@zhensherlock](https://github.com/zhensherlock)! - feat: add isUndefined type guard function
+
+- [`9bb5325`](https://github.com/zhensherlock/quick-launch-url/commit/9bb532539b88ab97b1903e56641a16024f773c2a) Thanks [@zhensherlock](https://github.com/zhensherlock)! - docs: update package metadata and readme content
+
+- [`fa94400`](https://github.com/zhensherlock/quick-launch-url/commit/fa94400819532760e8bda399cab04d6bfb605e3b) Thanks [@zhensherlock](https://github.com/zhensherlock)! - test: add tests for isUndefined function
+
 ## 0.0.1
 
 ### Patch Changes
