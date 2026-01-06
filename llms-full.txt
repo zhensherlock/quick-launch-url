@@ -3,6 +3,17 @@ url: /quick-launch-url/CHANGELOG.md
 ---
 # @quick-launch-url/docs
 
+## 0.0.2
+
+### Patch Changes
+
+* [`2e09c65`](https://github.com/zhensherlock/quick-launch-url/commit/2e09c65dac7308a4c33367d5e88ee9fc536924e6) Thanks [@zhensherlock](https://github.com/zhensherlock)! - feat(docs): add os detection and windows path support
+
+* [`a1a79c5`](https://github.com/zhensherlock/quick-launch-url/commit/a1a79c52356e8d72cd11d5e05a7d3ee7867ef580) Thanks [@zhensherlock](https://github.com/zhensherlock)! - feat(cursor): add open file functionality and documentation
+
+* Updated dependencies \[[`08b76cf`](https://github.com/zhensherlock/quick-launch-url/commit/08b76cf31a053521407a70ecc13e3f8ffdf70690), [`07d39c1`](https://github.com/zhensherlock/quick-launch-url/commit/07d39c17329c9c1466d27190c8abbb728f7673f7), [`912cc63`](https://github.com/zhensherlock/quick-launch-url/commit/912cc6318f9376f19c64bd7dbed9d84f353d2a70), [`01b1d7a`](https://github.com/zhensherlock/quick-launch-url/commit/01b1d7a543606466d8ee8d126f19ddcd6f2903b2), [`27f8f54`](https://github.com/zhensherlock/quick-launch-url/commit/27f8f54c092384e626ec9720998ba7a5330bd550)]:
+  * @quick-launch-url/core@0.0.2
+
 ## 0.0.1
 
 ### Patch Changes
@@ -319,6 +330,68 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installProvi
 ---
 
 ---
+url: /quick-launch-url/zh/apps/cursor.md
+---
+
+# Cursor
+
+[Cursor](https://cursor.sh) 是一个 AI 驱动的代码编辑器。**Quick Launch URL** 允许您生成深度链接，以便在 Cursor 中自动配置 MCP 服务器。
+
+## 使用
+
+提供两种使用方式：
+
+* 按需加载（通过子路径导入），支持 Tree Shaking，体积更小。
+* 全量导入（从根包导入），使用简单，但会包含所有应用模块。
+
+生产环境建议使用按需加载以减小体积；快速脚本或演示可选择全量导入。
+
+### 安装 STDIO MCP 服务
+
+```ts-vue [{{currentMethodDesc}}]
+import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
+  name: 'server-everything',
+  type: 'stdio',
+  command: 'npx',
+  args: ['-y', '@modelcontextprotocol/server-everything'],
+})
+```
+
+### 安装 Streamable HTTP MCP 服务
+
+```ts-vue [{{currentMethodDesc}}]
+import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
+  name: '企查查企业信息 MCP',
+  type: 'streamable_http',
+  url: 'https://mcp.qcc.com/basic/stream',
+  headers: {
+    Authorization: 'MjMmbGnP0gwLcbYe7MCr4FCuIA9dHQ9277zoO409EGZOdL3K',
+  },
+})
+```
+
+### 安装 SSE MCP 服务
+
+```ts-vue [{{currentMethodDesc}}]
+import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
+  name: '企查查风险信息 MCP',
+  type: 'sse',
+  url: 'https://mcp.qcc.com/basic/sse',
+  headers: {
+    Authorization: 'MjMmbGnP0gwLcbYe7MCr4FCuIA9dHQ9277zoO409EGZOdL3K',
+  },
+})
+```
+
+---
+
+---
 url: /quick-launch-url/appscursor.md
 ---
 
@@ -399,68 +472,6 @@ import { {{ currentMethod === 'On-Demand' ? 'openFolder' : 'cursor' }} } from '{
 const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
   path: '{{ appStore.isWindows ? 'C:\Windows' : '/System' }}',
   openInNewWindow: true,
-})
-```
-
----
-
----
-url: /quick-launch-url/zh/apps/cursor.md
----
-
-# Cursor
-
-[Cursor](https://cursor.sh) 是一个 AI 驱动的代码编辑器。**Quick Launch URL** 允许您生成深度链接，以便在 Cursor 中自动配置 MCP 服务器。
-
-## 使用
-
-提供两种使用方式：
-
-* 按需加载（通过子路径导入），支持 Tree Shaking，体积更小。
-* 全量导入（从根包导入），使用简单，但会包含所有应用模块。
-
-生产环境建议使用按需加载以减小体积；快速脚本或演示可选择全量导入。
-
-### 安装 STDIO MCP 服务
-
-```ts-vue [{{currentMethodDesc}}]
-import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
-
-const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
-  name: 'server-everything',
-  type: 'stdio',
-  command: 'npx',
-  args: ['-y', '@modelcontextprotocol/server-everything'],
-})
-```
-
-### 安装 Streamable HTTP MCP 服务
-
-```ts-vue [{{currentMethodDesc}}]
-import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
-
-const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
-  name: '企查查企业信息 MCP',
-  type: 'streamable_http',
-  url: 'https://mcp.qcc.com/basic/stream',
-  headers: {
-    Authorization: 'MjMmbGnP0gwLcbYe7MCr4FCuIA9dHQ9277zoO409EGZOdL3K',
-  },
-})
-```
-
-### 安装 SSE MCP 服务
-
-```ts-vue [{{currentMethodDesc}}]
-import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
-
-const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
-  name: '企查查风险信息 MCP',
-  type: 'sse',
-  url: 'https://mcp.qcc.com/basic/sse',
-  headers: {
-    Authorization: 'MjMmbGnP0gwLcbYe7MCr4FCuIA9dHQ9277zoO409EGZOdL3K',
-  },
 })
 ```
 

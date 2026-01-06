@@ -3,6 +3,17 @@ url: /quick-launch-url/CHANGELOG.md
 ---
 # @quick-launch-url/docs
 
+## 0.0.2
+
+### Patch Changes
+
+* [`2e09c65`](https://github.com/zhensherlock/quick-launch-url/commit/2e09c65dac7308a4c33367d5e88ee9fc536924e6) Thanks [@zhensherlock](https://github.com/zhensherlock)! - feat(docs): add os detection and windows path support
+
+* [`a1a79c5`](https://github.com/zhensherlock/quick-launch-url/commit/a1a79c52356e8d72cd11d5e05a7d3ee7867ef580) Thanks [@zhensherlock](https://github.com/zhensherlock)! - feat(cursor): add open file functionality and documentation
+
+* Updated dependencies \[[`08b76cf`](https://github.com/zhensherlock/quick-launch-url/commit/08b76cf31a053521407a70ecc13e3f8ffdf70690), [`07d39c1`](https://github.com/zhensherlock/quick-launch-url/commit/07d39c17329c9c1466d27190c8abbb728f7673f7), [`912cc63`](https://github.com/zhensherlock/quick-launch-url/commit/912cc6318f9376f19c64bd7dbed9d84f353d2a70), [`01b1d7a`](https://github.com/zhensherlock/quick-launch-url/commit/01b1d7a543606466d8ee8d126f19ddcd6f2903b2), [`27f8f54`](https://github.com/zhensherlock/quick-launch-url/commit/27f8f54c092384e626ec9720998ba7a5330bd550)]:
+  * @quick-launch-url/core@0.0.2
+
 ## 0.0.1
 
 ### Patch Changes
