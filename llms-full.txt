@@ -384,9 +384,20 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
 import { {{ currentMethod === 'On-Demand' ? 'openFile' : 'cursor' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
-  path: '/etc/hosts',
+  path: '{{ appStore.isWindows ? 'C:\Windows\System32\drivers\etc\hosts' : '/etc/hosts' }}',
   line: 1,
   column: 2,
+  openInNewWindow: true,
+})
+```
+
+### Open Folder
+
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openFolder' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
+  path: '{{ appStore.isWindows ? 'C:\Windows' : '/System' }}',
   openInNewWindow: true,
 })
 ```
