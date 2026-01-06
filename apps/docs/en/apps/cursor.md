@@ -7,6 +7,7 @@ import { ref, computed } from 'vue';
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue';
 import { installMCP, openFile, openFolder } from '@quick-launch-url/core/cursor';
 import { SelectInstallationMethod } from '../../.vitepress/components';
+import { useAppStore } from '../../.vitepress/stores/app';
 import {
   installSTDIOMCPServerParams,
   installStreamableHTTPMCPServerParams,
@@ -15,6 +16,7 @@ import {
   openFolderParams,
 } from '../../.vitepress/constants/cursor';
 
+const appStore = useAppStore();
 const currentMethod = ref('On-Demand');
 const importPath = computed(() => currentMethod.value === 'On-Demand' ? '@quick-launch-url/core/cursor' : '@quick-launch-url/core');
 </script>
@@ -94,14 +96,14 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
 import { {{ currentMethod === 'On-Demand' ? 'openFile' : 'cursor' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
-  path: '/etc/hosts',
+  path: '{{ appStore.isWindows ? 'C:\Windows\System32\drivers\etc\hosts' : '/etc/hosts' }}',
   line: 1,
   column: 2,
   openInNewWindow: true,
 })
 ```
 <div class="flex justify-center">
-  <VPLink :href="openFile(openFileParams)" target="_self">
+  <VPLink :href="openFile(openFileParams(appStore.isWindows))" target="_self">
     Add to Cursor
   </VPLink>
 </div>
@@ -111,12 +113,12 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
 import { {{ currentMethod === 'On-Demand' ? 'openFolder' : 'cursor' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
-  path: '/System',
+  path: '{{ appStore.isWindows ? 'C:\Windows' : '/System' }}',
   openInNewWindow: true,
 })
 ```
 <div class="flex justify-center">
-  <VPLink :href="openFolder(openFolderParams)" target="_self">
+  <VPLink :href="openFolder(openFolderParams(appStore.isWindows))" target="_self">
     Add to Cursor
   </VPLink>
 </div>
