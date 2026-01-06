@@ -23,4 +23,12 @@ describe('cursor.ts', () => {
     })
     expect(url).toBe('cursor://file/etc/hosts:1:2?windowId=_blank')
   })
+
+  test('openFolder should return a URL with path and openInNewWindow', async () => {
+    const url = cursor.openFolder({
+      path: '/System',
+      openInNewWindow: true,
+    })
+    expect(url).toBe('cursor://file/System?windowId=_blank')
+  })
 })

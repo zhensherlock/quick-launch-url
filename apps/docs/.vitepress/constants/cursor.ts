@@ -29,3 +29,8 @@ export const openFileParams = {
   column: 2,
   openInNewWindow: true,
 }
+
+export const openFolderParams = {
+  path: '/System',
+  openInNewWindow: true,
+}
