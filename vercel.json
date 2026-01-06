@@ -1,4 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "pnpm turbo run build --filter=@quick-launch-url/docs",
   "outputDirectory": "apps/docs/.vitepress/dist"
 }
