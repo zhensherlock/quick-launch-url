@@ -57,3 +57,27 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
   },
 })
 ```
+
+### 打开文件
+
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openFile' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
+  path: '{{ appStore.isWindows ? 'C:\Windows\System32\drivers\etc\hosts' : '/etc/hosts' }}',
+  line: 1,
+  column: 2,
+  openInNewWindow: true,
+})
+```
+
+### 打开文件夹
+
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openFolder' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
+  path: '{{ appStore.isWindows ? 'C:\Windows' : '/System' }}',
+  openInNewWindow: true,
+})
+```
