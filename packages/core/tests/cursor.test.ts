@@ -14,6 +14,13 @@ describe('cursor.ts', () => {
     )
   })
 
+  test('openFile should return a URL with path', async () => {
+    const url = cursor.openFile({
+      path: '/etc/hosts',
+    })
+    expect(url).toBe('cursor://file/etc/hosts')
+  })
+
   test('openFile should return a URL with path, line, column, and openInNewWindow', async () => {
     const url = cursor.openFile({
       path: '/etc/hosts',
@@ -30,5 +37,12 @@ describe('cursor.ts', () => {
       openInNewWindow: true,
     })
     expect(url).toBe('cursor://file/System?windowId=_blank')
+  })
+
+  test('openFolder should return a URL with path', async () => {
+    const url = cursor.openFolder({
+      path: '/System',
+    })
+    expect(url).toBe('cursor://file/System')
   })
 })
