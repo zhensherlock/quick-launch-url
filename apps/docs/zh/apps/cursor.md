@@ -5,14 +5,18 @@ layout: doc
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue';
-import { installMCP } from '@quick-launch-url/core/cursor';
+import { installMCP, openFile, openFolder } from '@quick-launch-url/core/cursor';
 import { SelectInstallationMethod } from '../../.vitepress/components';
+import { useAppStore } from '../../.vitepress/stores/app';
 import {
   installSTDIOMCPServerParams,
   installStreamableHTTPMCPServerParams,
   installSSEMCPServerParams,
+  openFileParams,
+  openFolderParams,
 } from '../../.vitepress/constants/cursor';
 
+const appStore = useAppStore();
 const currentMethod = ref('On-Demand');
 const importPath = computed(() => currentMethod.value === 'On-Demand' ? '@quick-launch-url/core/cursor' : '@quick-launch-url/core');
 const currentMethodDesc = computed(() => currentMethod.value === 'On-Demand' ? '按需加载' : '全量导入');
@@ -85,5 +89,37 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
 <div class="flex justify-center">
   <VPLink :href="installMCP(installSSEMCPServerParams)" target="_self">
     添加到 Cursor
+  </VPLink>
+</div>
+
+### 打开文件
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openFile' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
+  path: '{{ appStore.isWindows ? 'C:\Windows\System32\drivers\etc\hosts' : '/etc/hosts' }}',
+  line: 1,
+  column: 2,
+  openInNewWindow: true,
+})
+```
+<div class="flex justify-center">
+  <VPLink :href="openFile(openFileParams(appStore.isWindows))" target="_self">
+    在 Cursor 中打开
+  </VPLink>
+</div>
+
+### 打开文件夹
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openFolder' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
+  path: '{{ appStore.isWindows ? 'C:\Windows' : '/System' }}',
+  openInNewWindow: true,
+})
+```
+<div class="flex justify-center">
+  <VPLink :href="openFolder(openFolderParams(appStore.isWindows))" target="_self">
+    在 Cursor 中打开
   </VPLink>
 </div>

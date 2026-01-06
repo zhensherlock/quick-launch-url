@@ -104,7 +104,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
 ```
 <div class="flex justify-center">
   <VPLink :href="openFile(openFileParams(appStore.isWindows))" target="_self">
-    Add to Cursor
+    Open in Cursor
   </VPLink>
 </div>
 
@@ -119,6 +119,6 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
 ```
 <div class="flex justify-center">
   <VPLink :href="openFolder(openFolderParams(appStore.isWindows))" target="_self">
-    Add to Cursor
+    Open in Cursor
   </VPLink>
 </div>
