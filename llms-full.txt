@@ -413,6 +413,14 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
 })
 ```
 
+### Open Settings
+
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openSettings' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openSettings()
+```
+
 ---
 
 ---
@@ -497,6 +505,14 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
   path: '{{ appStore.isWindows ? 'C:\Windows\System32\drivers\etc' : '/etc' }}',
   openInNewWindow: true,
 })
+```
+
+### 打开设置
+
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openSettings' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openSettings()
 ```
 
 ---

@@ -81,3 +81,11 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
   openInNewWindow: true,
 })
 ```
+
+### 打开设置
+
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openSettings' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openSettings()
+```
