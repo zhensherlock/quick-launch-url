@@ -1,5 +1,12 @@
 # @quick-launch-url/docs
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`5132438`](https://github.com/zhensherlock/quick-launch-url/commit/513243842abdaee1b9a1596799ebc98277df7c87), [`491ba91`](https://github.com/zhensherlock/quick-launch-url/commit/491ba91ea8c11009c8f7e6dc849f16d0d35717a4), [`f53335f`](https://github.com/zhensherlock/quick-launch-url/commit/f53335f4afe49b31efe121bebe9f0008611ec3a5)]:
+  - @quick-launch-url/core@0.0.3
+
 ## 0.0.2
 
 ### Patch Changes

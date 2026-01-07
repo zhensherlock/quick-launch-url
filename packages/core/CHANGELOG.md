@@ -1,5 +1,18 @@
 # @quick-launch-url/core
 
+## 0.0.3
+
+### Patch Changes
+
+- [`5132438`](https://github.com/zhensherlock/quick-launch-url/commit/513243842abdaee1b9a1596799ebc98277df7c87) Thanks [@zhensherlock](https://github.com/zhensherlock)! - chore: update dependencies
+
+- [`491ba91`](https://github.com/zhensherlock/quick-launch-url/commit/491ba91ea8c11009c8f7e6dc849f16d0d35717a4) Thanks [@zhensherlock](https://github.com/zhensherlock)! - test(cursor): add missing test cases for openFile and openFolder
+
+- [`f53335f`](https://github.com/zhensherlock/quick-launch-url/commit/f53335f4afe49b31efe121bebe9f0008611ec3a5) Thanks [@zhensherlock](https://github.com/zhensherlock)! - feat(cursor): add openSettings function for settings URL
+
+- Updated dependencies [[`5132438`](https://github.com/zhensherlock/quick-launch-url/commit/513243842abdaee1b9a1596799ebc98277df7c87)]:
+  - @quick-launch-url/shared@0.0.3
+
 ## 0.0.2
 
 ### Patch Changes

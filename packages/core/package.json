@@ -1,6 +1,6 @@
 {
   "name": "@quick-launch-url/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "One-click launch URL generator for protocol-based apps.",
   "type": "module",
   "author": "zhensherlock",
