@@ -45,4 +45,9 @@ describe('cursor.ts', () => {
     })
     expect(url).toBe('cursor://file/System')
   })
+
+  test('openSettings should return a URL', async () => {
+    const url = cursor.openSettings()
+    expect(url).toBe('cursor://settings')
+  })
 })

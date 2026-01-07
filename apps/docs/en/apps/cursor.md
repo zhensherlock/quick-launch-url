@@ -5,7 +5,7 @@ layout: doc
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue';
-import { installMCP, openFile, openFolder } from '@quick-launch-url/core/cursor';
+import { installMCP, openFile, openFolder, openSettings } from '@quick-launch-url/core/cursor';
 import { SelectInstallationMethod } from '../../.vitepress/components';
 import { useAppStore } from '../../.vitepress/stores/app';
 import {
@@ -119,6 +119,18 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
 ```
 <div class="flex justify-center">
   <VPLink :href="openFolder(openFolderParams(appStore.isWindows))" target="_self">
+    Open in Cursor
+  </VPLink>
+</div>
+
+### Open Settings
+```ts-vue [{{currentMethod}}]
+import { {{ currentMethod === 'On-Demand' ? 'openSettings' : 'cursor' }} } from '{{ importPath }}'
+
+const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openSettings()
+```
+<div class="flex justify-center">
+  <VPLink :href="openSettings()" target="_self">
     Open in Cursor
   </VPLink>
 </div>
