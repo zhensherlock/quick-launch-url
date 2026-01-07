@@ -1,5 +1,11 @@
 # @quick-launch-url/shared
 
+## 0.0.3
+
+### Patch Changes
+
+- [`5132438`](https://github.com/zhensherlock/quick-launch-url/commit/513243842abdaee1b9a1596799ebc98277df7c87) Thanks [@zhensherlock](https://github.com/zhensherlock)! - chore: update dependencies
+
 ## 0.0.2
 
 ### Patch Changes
