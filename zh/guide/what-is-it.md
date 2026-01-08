@@ -1,5 +1,5 @@
 ---
-url: /protocol-launcher/zh/guide/what-is-it.md
+url: /quick-launch-url/zh/guide/what-is-it.md
 ---
 
 # 什么是 Quick Launch URL？

@@ -13,22 +13,23 @@
 
 ## Table of Contents
 
+### Introduction
 
+- [What is Quick Launch URL?](/quick-launch-url/guide/what-is-it.md)
+- [Getting Started](/quick-launch-url/guide/getting-started.md)
+
+### Applications
+
+- [Cherry Studio](/quick-launch-url/apps/cherry-studio.md)
+- [Cursor](/quick-launch-url/apps/cursor.md)
 
 ### 简介
 
-- [什么是 Quick Launch URL？](/protocol-launcher/zh/guide/what-is-it.md)
-- [入门指南](/protocol-launcher/zh/guide/getting-started.md)
+- [什么是 Quick Launch URL？](/quick-launch-url/zh/guide/what-is-it.md)
+- [入门指南](/quick-launch-url/zh/guide/getting-started.md)
 
 ### 应用程序
 
-- [Cherry Studio](/protocol-launcher/zh/apps/cherry-studio.md)
-- [Cursor](/protocol-launcher/zh/apps/cursor.md)
+- [Cherry Studio](/quick-launch-url/zh/apps/cherry-studio.md)
+- [Cursor](/quick-launch-url/zh/apps/cursor.md)
 
-### Other
-
-- [@quick-launch-url/docs](/protocol-launcher/CHANGELOG.md)
-- [Cherry Studio](/protocol-launcher/appscherry-studio.md)
-- [Cursor](/protocol-launcher/appscursor.md)
-- [Getting Started](/protocol-launcher/guidegetting-started.md)
-- [What is Quick Launch URL?](/protocol-launcher/guidewhat-is-it.md)

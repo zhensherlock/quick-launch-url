@@ -1,23 +1,23 @@
 ---
-url: /quick-launch-url/zh/apps/cursor.md
+url: /quick-launch-url/apps/cursor.md
 ---
 
 # Cursor
 
-[Cursor](https://cursor.sh) 是一个 AI 驱动的代码编辑器。**Quick Launch URL** 允许您生成深度链接，以便在 Cursor 中自动配置 MCP 服务器。
+[Cursor](https://cursor.sh) is an AI-powered code editor. **Quick Launch URL** allows you to generate deep links to automatically configure MCP Servers in Cursor.
 
-## 使用
+## Usage
 
-提供两种使用方式：
+There are two ways to use this library:
 
-* 按需加载（通过子路径导入），支持 Tree Shaking，体积更小。
-* 全量导入（从根包导入），使用简单，但会包含所有应用模块。
+* On-Demand import from subpaths enables tree-shaking and keeps bundles small.
+* Full Import from the root package is convenient but includes all app modules.
 
-生产环境建议使用按需加载以减小体积；快速脚本或演示可选择全量导入。
+Pick On-Demand for production builds; Full Import is fine for quick scripts or demos.
 
-### 安装 STDIO MCP 服务
+### Install STDIO MCP Server
 
-```ts-vue [{{currentMethodDesc}}]
+```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
@@ -28,9 +28,9 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
 })
 ```
 
-### 安装 Streamable HTTP MCP 服务
+### Install Streamable HTTP MCP Server
 
-```ts-vue [{{currentMethodDesc}}]
+```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
@@ -43,9 +43,9 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
 })
 ```
 
-### 安装 SSE MCP 服务
+### Install SSE MCP Server
 
-```ts-vue [{{currentMethodDesc}}]
+```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cursor' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
@@ -58,7 +58,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}installMCP({
 })
 ```
 
-### 打开文件
+### Open File
 
 ```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'openFile' : 'cursor' }} } from '{{ importPath }}'
@@ -71,7 +71,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFile({
 })
 ```
 
-### 打开文件夹
+### Open Folder
 
 ```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'openFolder' : 'cursor' }} } from '{{ importPath }}'
@@ -82,7 +82,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openFolder({
 })
 ```
 
-### 打开设置
+### Open Settings
 
 ```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'openSettings' : 'cursor' }} } from '{{ importPath }}'

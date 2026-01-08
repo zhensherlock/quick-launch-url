@@ -1,23 +1,23 @@
 ---
-url: /quick-launch-url/zh/apps/cherry-studio.md
+url: /quick-launch-url/apps/cherry-studio.md
 ---
 
 # Cherry Studio
 
-[Cherry Studio](https://cherry-ai.com) 是一个支持多种模型和提供商的强大 AI 客户端。**Quick Launch URL** 允许您生成深度链接，以便在 Cherry Studio 中自动配置 MCP 服务器和 AI 提供商。
+[Cherry Studio](https://cherry-ai.com) is a powerful AI client that supports multiple models and providers. **Quick Launch URL** allows you to generate deep links to automatically configure MCP Servers and AI Providers in Cherry Studio.
 
-## 使用
+## Usage
 
-提供两种使用方式：
+There are two ways to use this library:
 
-* 按需加载（通过子路径导入），支持 Tree Shaking，体积更小。
-* 全量导入（从根包导入），使用简单，但会包含所有应用模块。
+* On-Demand import from subpaths enables tree-shaking and keeps bundles small.
+* Full Import from the root package is convenient but includes all app modules.
 
-生产环境建议使用按需加载以减小体积；快速脚本或演示可选择全量导入。
+Pick On-Demand for production builds; Full Import is fine for quick scripts or demos.
 
-### 安装多个 MCP 服务器
+### Install Multiple MCP Servers
 
-```ts-vue [{{currentMethodDesc}}]
+```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cherryStudio' }} } from '{{ importPath }}'
 const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installMCP({
   mcpServers: {
@@ -67,9 +67,9 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installMCP({
 })
 ```
 
-### 安装 STDIO MCP 服务
+### Install STDIO MCP Server
 
-```ts-vue [{{currentMethodDesc}}]
+```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cherryStudio' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installMCP({
@@ -85,9 +85,9 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installMCP({
 })
 ```
 
-### 安装 Streamable HTTP MCP 服务
+### Install Streamable HTTP MCP Server
 
-```ts-vue [{{currentMethodDesc}}]
+```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cherryStudio' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installMCP({
@@ -108,9 +108,9 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installMCP({
 })
 ```
 
-### 安装 SSE MCP 服务
+### Install SSE MCP Server
 
-```ts-vue [{{currentMethodDesc}}]
+```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'installMCP' : 'cherryStudio' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installMCP({
@@ -131,9 +131,9 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installMCP({
 })
 ```
 
-### 安装大模型提供商
+### Install Provider
 
-```ts-vue [{{currentMethodDesc}}]
+```ts-vue [{{currentMethod}}]
 import { {{ currentMethod === 'On-Demand' ? 'installProvider' : 'cherryStudio' }} } from '{{ importPath }}'
 
 const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installProvider({
