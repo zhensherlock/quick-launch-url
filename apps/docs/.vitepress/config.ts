@@ -20,7 +20,7 @@ export default defineConfig({
     'en/apps/cherry-studio.md': 'apps/cherry-studio.md',
     'en/apps/cursor.md': 'apps/cursor.md',
   },
-  base: isGithubPages ? '/quick-launch-url/' : '/',
+  base,
   head: [
     ['link', { rel: 'shortcut icon', href: `${base}logo.svg` }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${base}logo.svg` }],
