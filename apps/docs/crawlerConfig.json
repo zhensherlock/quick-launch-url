@@ -1,6 +1,15 @@
 {
   "index_name": "quick-launch-url",
-  "start_urls": ["https://zhensherlock.github.io/quick-launch-url/"],
+  "start_urls": [
+    {
+      "url": "https://zhensherlock.github.io/quick-launch-url/",
+      "tags": ["gh"]
+    },
+    {
+      "url": "https://quick-launch-url.vercel.app/",
+      "tags": ["vercel"]
+    }
+  ],
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {
