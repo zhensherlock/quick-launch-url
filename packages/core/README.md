@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://zhensherlock.github.io/quick-launch-url/" target="_blank" rel="noopener noreferrer">
-    <img width="300" src="https://zhensherlock.github.io/quick-launch-url/logo.svg" alt="watermark logo">
+    <img width="300" src="https://zhensherlock.github.io/quick-launch-url/logo.svg" alt="quick-launch-url">
   </a>
 </p>
 
