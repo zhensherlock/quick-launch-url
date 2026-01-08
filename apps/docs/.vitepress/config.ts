@@ -6,6 +6,7 @@ import llmstxt from 'vitepress-plugin-llms'
 import pkg from '../../../packages/core/package.json' with { type: 'json' }
 
 const isGithubPages = isUndefined(process.env.VERCEL)
+const base = isGithubPages ? '/quick-launch-url/' : '/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,8 +22,8 @@ export default defineConfig({
   },
   base: isGithubPages ? '/quick-launch-url/' : '/',
   head: [
-    ['link', { rel: 'shortcut icon', href: '/quick-launch-url/logo.svg' }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/quick-launch-url/logo.svg' }],
+    ['link', { rel: 'shortcut icon', href: `${base}logo.svg` }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${base}logo.svg` }],
   ],
   locales: {
     root: { label: 'English', lang: 'en-US', dir: 'ltr' },
