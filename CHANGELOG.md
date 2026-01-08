@@ -1,5 +1,5 @@
 ---
-url: /quick-launch-url/CHANGELOG.md
+url: /protocol-launcher/CHANGELOG.md
 ---
 # @quick-launch-url/docs
 

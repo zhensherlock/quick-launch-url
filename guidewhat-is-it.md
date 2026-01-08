@@ -1,5 +1,5 @@
 ---
-url: /quick-launch-url/guidewhat-is-it.md
+url: /protocol-launcher/guidewhat-is-it.md
 ---
 
 # What is Quick Launch URL?

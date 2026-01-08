@@ -1,5 +1,5 @@
 ---
-url: /quick-launch-url/CHANGELOG.md
+url: /protocol-launcher/CHANGELOG.md
 ---
 # @quick-launch-url/docs
 
@@ -43,7 +43,7 @@ url: /quick-launch-url/CHANGELOG.md
 ---
 
 ---
-url: /quick-launch-url/appscherry-studio.md
+url: /protocol-launcher/appscherry-studio.md
 ---
 
 # Cherry Studio
@@ -190,7 +190,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installProvi
 ---
 
 ---
-url: /quick-launch-url/zh/apps/cherry-studio.md
+url: /protocol-launcher/zh/apps/cherry-studio.md
 ---
 
 # Cherry Studio
@@ -337,7 +337,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cherryStudio.'}}installProvi
 ---
 
 ---
-url: /quick-launch-url/appscursor.md
+url: /protocol-launcher/appscursor.md
 ---
 
 # Cursor
@@ -431,7 +431,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openSettings()
 ---
 
 ---
-url: /quick-launch-url/zh/apps/cursor.md
+url: /protocol-launcher/zh/apps/cursor.md
 ---
 
 # Cursor
@@ -525,7 +525,7 @@ const url = {{currentMethod === 'On-Demand' ? '' : 'cursor.'}}openSettings()
 ---
 
 ---
-url: /quick-launch-url/guidegetting-started.md
+url: /protocol-launcher/guidegetting-started.md
 ---
 
 # Getting Started
@@ -590,7 +590,7 @@ For detailed usage instructions for each application, please refer to their resp
 ---
 
 ---
-url: /quick-launch-url/guidewhat-is-it.md
+url: /protocol-launcher/guidewhat-is-it.md
 ---
 
 # What is Quick Launch URL?
@@ -620,7 +620,7 @@ More applications will be added in the future.
 ---
 
 ---
-url: /quick-launch-url/zh/guide/what-is-it.md
+url: /protocol-launcher/zh/guide/what-is-it.md
 ---
 
 # 什么是 Quick Launch URL？
@@ -650,7 +650,7 @@ url: /quick-launch-url/zh/guide/what-is-it.md
 ---
 
 ---
-url: /quick-launch-url/zh/guide/getting-started.md
+url: /protocol-launcher/zh/guide/getting-started.md
 ---
 
 # 入门指南

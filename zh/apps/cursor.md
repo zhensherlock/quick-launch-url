@@ -1,5 +1,5 @@
 ---
-url: /quick-launch-url/zh/apps/cursor.md
+url: /protocol-launcher/zh/apps/cursor.md
 ---
 
 # Cursor

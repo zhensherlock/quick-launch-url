@@ -1,5 +1,5 @@
 ---
-url: /quick-launch-url/guidegetting-started.md
+url: /protocol-launcher/guidegetting-started.md
 ---
 
 # Getting Started

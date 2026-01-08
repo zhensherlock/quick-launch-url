@@ -1,5 +1,5 @@
 ---
-url: /quick-launch-url/zh/guide/getting-started.md
+url: /protocol-launcher/zh/guide/getting-started.md
 ---
 
 # 入门指南

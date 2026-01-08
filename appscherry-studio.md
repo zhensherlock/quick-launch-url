@@ -1,5 +1,5 @@
 ---
-url: /quick-launch-url/appscherry-studio.md
+url: /protocol-launcher/appscherry-studio.md
 ---
 
 # Cherry Studio

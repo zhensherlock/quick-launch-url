@@ -1,5 +1,5 @@
 ---
-url: /quick-launch-url/zh/apps/cherry-studio.md
+url: /protocol-launcher/zh/apps/cherry-studio.md
 ---
 
 # Cherry Studio
